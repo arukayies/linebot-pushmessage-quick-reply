@@ -3,9 +3,6 @@ const DEBUGID = 'LINEのユーザIDを指定(取得方法：https://arukayies.co
 
 //LINEBOTでクイックリプライボタンを設定したメッセージを送るサンプル
 function pushmessage_quick_reply() {
-  //スクリプトプロパティのオブジェクトを取得
-  const prop = PropertiesService.getScriptProperties().getProperties();
-
   //クイックリプライボタンを設定したメッセージを送る
   UrlFetchApp.fetch('https://api.line.me/v2/bot/message/push', {
     'headers': {
